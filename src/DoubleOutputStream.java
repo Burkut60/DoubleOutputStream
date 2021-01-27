@@ -1,7 +1,4 @@
-import java.io.ByteArrayOutputStream;
-
-import java.io.IOException;
-import java.io.OutputStream;
+import java.io.*;
 
 public class DoubleOutputStream extends OutputStream {
     final ByteArrayOutputStream byteArrayOutputStream1;
@@ -20,9 +17,9 @@ public class DoubleOutputStream extends OutputStream {
         this.byteArrayOutputStream1.write(b);
         this.out1.write(b);
         this.out2.write(b);
-    }
+   }
 
     public byte[] toByteArray() {
-        return this.byteArrayOutputStream1.toByteArray();
-    }
+       return this.byteArrayOutputStream1.toByteArray();
+   }
 }
