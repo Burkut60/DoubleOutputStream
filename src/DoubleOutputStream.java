@@ -13,13 +13,12 @@ public class DoubleOutputStream extends OutputStream {
 
     @Override
     public void write(int b) throws IOException {
-
         this.byteArrayOutputStream1.write(b);
         this.out1.write(b);
         this.out2.write(b);
-   }
+    }
 
     public byte[] toByteArray() {
-       return this.byteArrayOutputStream1.toByteArray();
-   }
+        return this.byteArrayOutputStream1.toByteArray();
+    }
 }
