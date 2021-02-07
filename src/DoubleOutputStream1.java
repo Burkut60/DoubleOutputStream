@@ -20,9 +20,4 @@ public class DoubleOutputStream1 extends OutputStream {
         this.output1.write(b);
         this.output2.write(b);
     }
-
-    public void close() throws IOException {
-        this.output1.close();
-        this.output2.close();
-    }
 }

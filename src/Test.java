@@ -11,7 +11,7 @@ public class Test {
 
         DoubleOutputStream1 doubleOutputStream1 = new DoubleOutputStream1(outputStream11, outputStream22);
         PrintWriter printWriter = new PrintWriter(doubleOutputStream1);
-        printWriter.print("Good day");
+        printWriter.print(a);
         printWriter.flush();
         printWriter.close();
     }
