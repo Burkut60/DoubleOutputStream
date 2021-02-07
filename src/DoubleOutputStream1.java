@@ -7,7 +7,7 @@ public class DoubleOutputStream1 extends OutputStream {
 
     protected OutputStream output1;
     protected OutputStream output2;
-  
+
 
     public DoubleOutputStream1(OutputStream output1, OutputStream output2) {
 
@@ -17,12 +17,12 @@ public class DoubleOutputStream1 extends OutputStream {
 
     @Override
     public void write(int b) throws IOException {
-this.output1.write(b);
-this.output2.write(b);
+        this.output1.write(b);
+        this.output2.write(b);
     }
-    
+
     public void close() throws IOException {
-       this.output1.close();
-       this.output2.close();
+        this.output1.close();
+        this.output2.close();
     }
 }
